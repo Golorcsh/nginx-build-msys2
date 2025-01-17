@@ -122,6 +122,7 @@ touch -r "${ZLIB}/README" '../docs/zlib.LICENSE'
 
 # configure
 configure_args=(
+    --add-module=../ngx_http_proxy_connect_module
     --sbin-path=nginx.exe \
     --http-client-body-temp-path=temp/client_body \
     --http-proxy-temp-path=temp/proxy \
